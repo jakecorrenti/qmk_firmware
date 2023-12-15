@@ -90,9 +90,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [NUM] = LAYOUT_split_3x5_3(
-    XXXXXXX, KC_7,    KC_8,    KC_9,    XXXXXXX,      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-    XXXXXXX, KC_4,    KC_5,    KC_6,    KC_0,         XXXXXXX, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,
-    XXXXXXX, KC_1,    KC_2,    KC_3,    XXXXXXX,      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,      XXXXXXX, KC_7,    KC_8,    KC_9,    XXXXXXX,
+    OS_CMD , OS_ALT,  OS_CTRL, OS_SHFT, XXXXXXX,      KC_0,    KC_4,    KC_5,    KC_6,    XXXXXXX,
+    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,      XXXXXXX, KC_1,    KC_2,    KC_3,    XXXXXXX,
                       XXXXXXX, _______, XXXXXXX,      XXXXXXX, _______, XXXXXXX
   )
 };
