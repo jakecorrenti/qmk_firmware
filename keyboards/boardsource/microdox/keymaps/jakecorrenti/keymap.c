@@ -56,6 +56,17 @@ typedef enum {
 #define LA_SYM MO(SYM)
 #define LA_NAV MO(NAV)
 
+const uint16_t PROGMEM ent_combo[] = {KC_J, KC_QUOT, COMBO_END};
+const uint16_t PROGMEM esc_combo[] = {KC_F, KC_A, COMBO_END};
+const uint16_t PROGMEM bspc_combo[] = {KC_K, KC_L, COMBO_END};
+const uint16_t PROGMEM tab_combo[] = {KC_D, KC_S, COMBO_END};
+combo_t key_combos[] = {
+    COMBO(ent_combo, KC_ENT),
+    COMBO(tab_combo, KC_TAB),
+    COMBO(bspc_combo, KC_BSPC),
+    COMBO(esc_combo, KC_ESC),
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [DEF] = LAYOUT_split_3x5_3(
     KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,         KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
